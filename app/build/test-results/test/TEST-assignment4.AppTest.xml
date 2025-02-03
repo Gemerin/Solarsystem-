@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="assignment4.AppTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2024-03-22T10:47:24" hostname="LAPTOP-UD5J0QG3" time="0.024">
+  <properties/>
+  <testcase name="testAddMoon()" classname="assignment4.AppTest" time="0.005"/>
+  <testcase name="testCheckAvgRadiusInKmThrowsExceptionWhenRadiusIsTooLarge()" classname="assignment4.AppTest" time="0.001"/>
+  <testcase name="testCheckAvgRadiusInKmThrowsExceptionWhenRadiusIsTooSmall()" classname="assignment4.AppTest" time="0.001"/>
+  <testcase name="testGetSolarSystems()" classname="assignment4.AppTest" time="0.004"/>
+  <testcase name="testAddMoonThrowsExceptionWhenOrbitIsTooSmall()" classname="assignment4.AppTest" time="0.002"/>
+  <testcase name="testAddMoonThrowsExceptionWhenMoonIsTooBig()" classname="assignment4.AppTest" time="0.001"/>
+  <testcase name="testCreateHeavenlyBody()" classname="assignment4.AppTest" time="0.001"/>
+  <testcase name="testCreateHeavenlyBodyWithInvalidType()" classname="assignment4.AppTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

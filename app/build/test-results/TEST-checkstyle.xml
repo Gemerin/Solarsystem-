@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite package="org.checkstyle" time="0" tests="7" errors="1" name="checkstyle">
+<testcase time="0" name="assignment4/App.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="assignment4/solarsystem/Console.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="assignment4/solarsystem/HeavenlyBody.java" classname="CheckStyle Issues">
+<failure message="issues" ><![CDATA[line: 158 column: column:3 
+Avoid using finalizer method.
+----------------
+]]></failure>
+</testcase><testcase time="0" name="assignment4/solarsystem/HeavenlyBodyFactory.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="assignment4/solarsystem/Moon.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="assignment4/solarsystem/Planet.java" classname="CheckStyle Issues">
+</testcase><testcase time="0" name="assignment4/solarsystem/Star.java" classname="CheckStyle Issues">
+</testcase></testsuite>

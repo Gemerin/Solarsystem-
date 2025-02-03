@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuite package="org.spotbugs" time="0" tests="2" errors="2" name="findbugs">
+<testcase time="0" name="assignment4/solarsystem/Star.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 14-95 
+getPlanets() may expose internal representation by returning Star.planets 
+May expose internal representation by returning reference to mutable object 
+Returning a reference to a mutable object value stored in one of the 
+  object's fields exposes the internal representation of the object. If 
+  instances are accessed by untrusted code, and unchecked changes to the 
+  mutable object would compromise security or other important properties, 
+  you will need to do something different. Returning a new copy of the 
+  object is better approach in many situations.
+----------------
+]]></failure>
+</testcase><testcase time="0" name="assignment4/solarsystem/Planet.java" classname="FindBugs Issues">
+<failure message="issues" ><![CDATA[lines: 17-112 
+getMoons() may expose internal representation by returning Planet.moons 
+May expose internal representation by returning reference to mutable object 
+Returning a reference to a mutable object value stored in one of the 
+  object's fields exposes the internal representation of the object. If 
+  instances are accessed by untrusted code, and unchecked changes to the 
+  mutable object would compromise security or other important properties, 
+  you will need to do something different. Returning a new copy of the 
+  object is better approach in many situations.
+----------------
+]]></failure>
+</testcase></testsuite>

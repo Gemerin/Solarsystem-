@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.38">
+<file name="C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\src\main\java\assignment4\App.java">
+</file>
+<file name="C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\src\main\java\assignment4\solarsystem\Console.java">
+</file>
+<file name="C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\src\main\java\assignment4\solarsystem\HeavenlyBody.java">
+<error line="158" column="3" severity="warning" message="Avoid using finalizer method." source="com.puppycrawl.tools.checkstyle.checks.coding.NoFinalizerCheck"/>
+</file>
+<file name="C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\src\main\java\assignment4\solarsystem\HeavenlyBodyFactory.java">
+</file>
+<file name="C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\src\main\java\assignment4\solarsystem\Moon.java">
+</file>
+<file name="C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\src\main\java\assignment4\solarsystem\Planet.java">
+</file>
+<file name="C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\src\main\java\assignment4\solarsystem\Star.java">
+</file>
+</checkstyle>

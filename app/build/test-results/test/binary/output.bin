@@ -1,0 +1,30 @@
+p0 CheckStyle Issues in C:/Users/Saskia/Desktop/Java/1sv502/assignment-4/app/src/main/java/assignment4/App.java
+€0 CheckStyle Issues in C:/Users/Saskia/Desktop/Java/1sv502/assignment-4/app/src/main/java/assignment4/solarsystem/Console.java
+…1 CheckStyle Issues in C:/Users/Saskia/Desktop/Java/1sv502/assignment-4/app/src/main/java/assignment4/solarsystem/HeavenlyBody.java
+"text:line: 158 column: column:3 
+Avoid using finalizer method.
+
+Œ0 CheckStyle Issues in C:/Users/Saskia/Desktop/Java/1sv502/assignment-4/app/src/main/java/assignment4/solarsystem/HeavenlyBodyFactory.java
+}0 CheckStyle Issues in C:/Users/Saskia/Desktop/Java/1sv502/assignment-4/app/src/main/java/assignment4/solarsystem/Moon.java
+0 CheckStyle Issues in C:/Users/Saskia/Desktop/Java/1sv502/assignment-4/app/src/main/java/assignment4/solarsystem/Planet.java
+}0 CheckStyle Issues in C:/Users/Saskia/Desktop/Java/1sv502/assignment-4/app/src/main/java/assignment4/solarsystem/Star.java
+81 FindBugs Issues in assignment4/solarsystem/Star.java
+text:lines: 14-95 
+LgetPlanets() may expose internal representation by returning Star.planets 
+NMay expose internal representation by returning reference to mutable object 
+cReturning a reference to a mutable object value stored in one of the object's fields exposes the 
+f  internal representation of the object. If instances are accessed by untrusted code, and unchecked 
+d  changes to the mutable object would compromise security or other important properties, you will 
+b  need to do something different. Returning a new copy of the object is better approach in many 
+  situations.
+
+:1 FindBugs Issues in assignment4/solarsystem/Planet.java
+text:lines: 17-112 
+JgetMoons() may expose internal representation by returning Planet.moons 
+NMay expose internal representation by returning reference to mutable object 
+cReturning a reference to a mutable object value stored in one of the object's fields exposes the 
+f  internal representation of the object. If instances are accessed by untrusted code, and unchecked 
+d  changes to the mutable object would compromise security or other important properties, you will 
+b  need to do something different. Returning a new copy of the object is better approach in many 
+  situations.
+

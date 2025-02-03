@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.3" sequence="0" timestamp="1711104439670" analysisTimestamp="1711104439670" release="">
+  <Project projectName="app (spotbugsMain)">
+    <Jar>C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\build\classes\java\main\assignment4\App$1.class</Jar>
+    <Jar>C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\build\classes\java\main\assignment4\App.class</Jar>
+    <Jar>C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\build\classes\java\main\assignment4\solarsystem\Console$1.class</Jar>
+    <Jar>C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\build\classes\java\main\assignment4\solarsystem\Console$2.class</Jar>
+    <Jar>C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\build\classes\java\main\assignment4\solarsystem\Console.class</Jar>
+    <Jar>C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\build\classes\java\main\assignment4\solarsystem\HeavenlyBody.class</Jar>
+    <Jar>C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\build\classes\java\main\assignment4\solarsystem\HeavenlyBodyFactory.class</Jar>
+    <Jar>C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\build\classes\java\main\assignment4\solarsystem\Moon.class</Jar>
+    <Jar>C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\build\classes\java\main\assignment4\solarsystem\Planet.class</Jar>
+    <Jar>C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\build\classes\java\main\assignment4\solarsystem\Star.class</Jar>
+    <AuxClasspathEntry>C:\Users\Saskia\.gradle\caches\modules-2\files-2.1\net.jcip\jcip-annotations\1.0\afba4942caaeaf46aab0b976afd57cc7c181467e\jcip-annotations-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Saskia\.gradle\caches\modules-2\files-2.1\com.github.spotbugs\spotbugs-annotations\3.1.3\c19e39b6227963e05760d4f93b9b0785743f9439\spotbugs-annotations-3.1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Saskia\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\30.1.1-jre\87e0fd1df874ea3cbe577702fe6f17068b790fd8\guava-30.1.1-jre.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Saskia\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Saskia\.gradle\caches\modules-2\files-2.1\com.google.guava\failureaccess\1.0.1\1dcf1de382a0bf95a3d8b0849546c88bac1292c9\failureaccess-1.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Saskia\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\b421526c5f297295adef1c886e5246c39d4ac629\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Saskia\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-qual\3.8.0\6b83e4a33220272c3a08991498ba9dc09519f190\checker-qual-3.8.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Saskia\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.5.1\562d366678b89ce5d6b6b82c1a073880341e3fba\error_prone_annotations-2.5.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Saskia\.gradle\caches\modules-2\files-2.1\com.google.j2objc\j2objc-annotations\1.3\ba035118bc8bac37d7eff77700720999acd9986d\j2objc-annotations-1.3.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\src\main\resources</SrcDir>
+    <SrcDir>C:\Users\Saskia\Desktop\Java\1sv502\assignment-4\app\src\main\java</SrcDir>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="39c9b085c03a6b77d367c3bde177f89e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>assignment4.solarsystem.Planet.getMoons() may expose internal representation by returning Planet.moons</LongMessage>
+    <Class classname="assignment4.solarsystem.Planet" primary="true">
+      <SourceLine classname="assignment4.solarsystem.Planet" start="17" end="112" sourcefile="Planet.java" sourcepath="assignment4/solarsystem/Planet.java" relSourcepath="java\assignment4\solarsystem\Planet.java">
+        <Message>At Planet.java:[lines 17-112]</Message>
+      </SourceLine>
+      <Message>In class assignment4.solarsystem.Planet</Message>
+    </Class>
+    <Method classname="assignment4.solarsystem.Planet" name="getMoons" signature="()Ljava/util/ArrayList;" isStatic="false" primary="true">
+      <SourceLine classname="assignment4.solarsystem.Planet" start="80" end="80" startBytecode="0" endBytecode="46" sourcefile="Planet.java" sourcepath="assignment4/solarsystem/Planet.java" relSourcepath="java\assignment4\solarsystem\Planet.java"/>
+      <Message>In method assignment4.solarsystem.Planet.getMoons()</Message>
+    </Method>
+    <Field classname="assignment4.solarsystem.Planet" name="moons" signature="Ljava/util/ArrayList;" isStatic="false" primary="true">
+      <SourceLine classname="assignment4.solarsystem.Planet" sourcefile="Planet.java" sourcepath="assignment4/solarsystem/Planet.java" relSourcepath="java\assignment4\solarsystem\Planet.java">
+        <Message>In Planet.java</Message>
+      </SourceLine>
+      <Message>Field assignment4.solarsystem.Planet.moons</Message>
+    </Field>
+    <SourceLine classname="assignment4.solarsystem.Planet" primary="true" start="80" end="80" startBytecode="4" endBytecode="4" sourcefile="Planet.java" sourcepath="assignment4/solarsystem/Planet.java" relSourcepath="java\assignment4\solarsystem\Planet.java">
+      <Message>At Planet.java:[line 80]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" instanceHash="964265ad7cd5ac458059f10702a21da6" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by returning reference to mutable object</ShortMessage>
+    <LongMessage>assignment4.solarsystem.Star.getPlanets() may expose internal representation by returning Star.planets</LongMessage>
+    <Class classname="assignment4.solarsystem.Star" primary="true">
+      <SourceLine classname="assignment4.solarsystem.Star" start="14" end="95" sourcefile="Star.java" sourcepath="assignment4/solarsystem/Star.java" relSourcepath="java\assignment4\solarsystem\Star.java">
+        <Message>At Star.java:[lines 14-95]</Message>
+      </SourceLine>
+      <Message>In class assignment4.solarsystem.Star</Message>
+    </Class>
+    <Method classname="assignment4.solarsystem.Star" name="getPlanets" signature="()Ljava/util/ArrayList;" isStatic="false" primary="true">
+      <SourceLine classname="assignment4.solarsystem.Star" start="37" end="37" startBytecode="0" endBytecode="46" sourcefile="Star.java" sourcepath="assignment4/solarsystem/Star.java" relSourcepath="java\assignment4\solarsystem\Star.java"/>
+      <Message>In method assignment4.solarsystem.Star.getPlanets()</Message>
+    </Method>
+    <Field classname="assignment4.solarsystem.Star" name="planets" signature="Ljava/util/ArrayList;" isStatic="false" primary="true">
+      <SourceLine classname="assignment4.solarsystem.Star" sourcefile="Star.java" sourcepath="assignment4/solarsystem/Star.java" relSourcepath="java\assignment4\solarsystem\Star.java">
+        <Message>In Star.java</Message>
+      </SourceLine>
+      <Message>Field assignment4.solarsystem.Star.planets</Message>
+    </Field>
+    <SourceLine classname="assignment4.solarsystem.Star" primary="true" start="37" end="37" startBytecode="4" endBytecode="4" sourcefile="Star.java" sourcepath="assignment4/solarsystem/Star.java" relSourcepath="java\assignment4\solarsystem\Star.java">
+      <Message>At Star.java:[line 37]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugPattern type="EI_EXPOSE_REP" abbrev="EI" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by returning reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="EI">
+    <Description>Method returning array may expose internal representation</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 22 Mar 2024 11:47:19 +0100" total_classes="0" referenced_classes="0" total_bugs="2" total_size="0" num_packages="1" java_version="17.0.9" vm_version="17.0.9+9" cpu_seconds="2.59" clock_seconds="3.34" peak_mbytes="247.51" alloc_mbytes="4020.00" gc_seconds="0.04" priority_2="2">
+    <FileStats path="assignment4/solarsystem/Planet.java" bugCount="1" size="0" bugHash="d73f088335e3f23166aaf3548522792a"/>
+    <FileStats path="assignment4/solarsystem/Star.java" bugCount="1" size="0" bugHash="c06489072acd8089f184cbbd2cb73d0d"/>
+    <FindBugsProfile></FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
